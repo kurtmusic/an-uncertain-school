@@ -85,6 +85,8 @@ html{
 
 }
 
+
+
 #close{
     color: #ffffff;
     cursor: pointer;
@@ -152,7 +154,7 @@ html{
     background-color:transparent;
     padding: 0 0 0 0.8%;
     top: 79%;
-
+    z-index: 52;
 }
 
 #dragContainer{
@@ -213,7 +215,8 @@ padding-inline-start: 0;
     grid-template-columns: 96% 4%;
     position: fixed;
     top: 1%;
-    width: 100%
+    width: 100%;
+    z-index:52;
 }
 
 #topMenu{
@@ -223,6 +226,7 @@ padding-inline-start: 0;
     align-items: center;
     padding: 0 0 0 1%;
     margin: 0.6% auto;
+    
 
 }
 
@@ -268,6 +272,27 @@ padding-inline-start: 0;
     left: 95.35%;
 }
 
+.images {
+    position: absolute;
+    width: 10%;
+    height: auto;
+    z-index: 51;
+}
+
+.img-1 span{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    margin: 0;
+    white-space: nowrap;
+    font-size:400%;
+}
+
+.img-1:hover span{
+    opacity: 100%;
+}
 
 
 #topMenu li:nth-child(1){
@@ -284,7 +309,8 @@ padding-inline-start: 0;
 
 body{
     margin: 0 auto;
-    width: 200%;
+    width: 3000px;
+    height: 3000px;
 }
 
 
