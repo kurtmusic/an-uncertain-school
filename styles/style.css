@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap');
 
 html{
     background-image: url("../images/background.jpg");
@@ -16,24 +17,100 @@ html{
 
 ::-webkit-scrollbar-thumb {
     background-color: #ffffff;
+    border: 0.5px solid black;
+    border-radius: 9px;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F8F8F8;
+    border: 0.5px solid black;
+}
+
+.closed{
+    display:none;
+}
+
+#aboutPop{
+    background-color: rgba(0,0,254,1);
+    position: fixed;
+    top: 3.5%;
+    left: 64.5%;
+    height: 50%;
+    width: 32%;
+    z-index: 50;
+    
+}
+
+.about{
+    padding:3%;
+}
+
+#aboutBodyContainer{
+    height: 80%
+}
+
+
+#aboutTitle{
+    font-size:180%;
+    color: #ffffff;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.aboutBody{
+    font-size:85%;
+    color: #ffffff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: light;
+    padding-left: 3%;
+    overflow-y: auto;
+
+}
+
+.aboutBody::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.aboutBody::-webkit-scrollbar {
+    width: 0.80em;    
+    height:  0.80em;
+    background-color: transparent;
+} 
+
+.aboutBody::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
     border: 3px solid transparent ;
     border-radius: 9px;
     background-clip: content-box;
 
 }
 
-::-webkit-scrollbar-track {
-    background-color: rgba(0,0,254,0.49);
+#close{
+    color: #ffffff;
+    cursor: pointer;
 }
 
-#aboutPop{
-    background-color: rgba(0,0,254,0.30);
-    position: fixed;
-    top: 3.5%;
-    left: 56.5%;
-    height: 60%;
-    width: 40%;
-    display: none;
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+}
+
+.col-md-6{
+    grid-column: span 6;
+}
+
+
+
+.col-md-11{
+    grid-column: span 11;
+}
+
+.col-md-1{
+    grid-column: span 1;
+    justify-self: center;
+    align-self:center;
+    
 }
 
 #contactPop{
@@ -96,19 +173,13 @@ html{
 
 
 #bottomTwo{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    display: flex;
-    justify-content: space-between; 
-    padding-inline-start: 0;
+    color: rgba(0,0,254,0.30);
+padding-inline-start: 0;
 }
 
 
 #bottomThree{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    display: flex;
-    justify-content: space-between; 
+    color: rgba(0,0,254,0.30);
     padding-inline-start: 0;
 }
 
@@ -171,10 +242,32 @@ html{
     padding: 0 1% 0 0;
     margin: 0.6% auto;
     position: fixed;
-    top: 93%;
+    top: 92%;
     left: 97.35%;
-
 }
+
+#maximizeButton{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1% 0 0;
+    margin: 0.6% auto;
+    position: fixed;
+    top: 92%;
+    left: 93.35%;
+}
+
+#minimizeButton{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1% 0 0;
+    margin: 0.6% auto;
+    position: fixed;
+    top: 92%;
+    left: 95.35%;
+}
+
 
 
 #topMenu li:nth-child(1){
@@ -198,6 +291,7 @@ body{
 li {
     list-style: none;
     font-size: 125%;
+    cursor: pointer;
 }
 
 li:hover {
