@@ -52,7 +52,7 @@ function closeFullscreen() {
 let maxX, maxY;
 
 function placeImg() {
-    const imgSrcArray = ['/an-uncertain-school/images/1.jpg','an-uncertain-schoo/images/2.jpg','../images/3.jpg','../images/4.jpg','../images/5.jpg','../images/6.png','../images/1.jpg','../images/2.jpg','../images/3.jpg','../images/4.jpg','../images/5.jpg','../images/6.png'];
+    const imgSrcArray = ['/an-uncertain-school/images/1.jpg','/an-uncertain-school/images/2.jpg','/an-uncertain-school/images/3.jpg','/an-uncertain-school/images/4.jpg','/an-uncertain-school/images/5.jpg','/an-uncertain-school/images/6.png','/an-uncertain-school/images/1.jpg','/an-uncertain-school/images/2.jpg','/an-uncertain-school/images/3.jpg','/an-uncertain-school/images/4.jpg','/an-uncertain-school/images/5.jpg','/an-uncertain-school/images/6.png'];
     const {random: r} = Math;
     
 
